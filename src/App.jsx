@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 import Blogs from "./components/Blogs";
 import SecondaryCarousel from "./components/elements/SecondaryCarousel";
+import Contact from "./components/Contact";
 
 function App() {
   const [pageName, setPageName] = useState("Home");
@@ -24,13 +25,14 @@ function App() {
       ) : (
         <SecondaryCarousel pageName={pageName} />
       )}
+
       {(pageName === "Home" || pageName === "About") && <About />}
       {(pageName === "Home" || pageName === "Service") && <Services />}
       {(pageName === "Home" ||
         pageName === "About" ||
         pageName === "Service") && <Appointment />}
       {pageName === "Home" && <Portfolio />}
-
+      {pageName === "Contact" && <Contact />}
       {(pageName === "Home" || pageName === "About") && <Team />}
       {(pageName === "Home" || pageName === "Service") && <Testimonial />}
       {pageName === "Home" && <Blogs />}
