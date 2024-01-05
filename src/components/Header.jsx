@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header({ pageName, setPageName }) {
   const [show, setShow] = useState("");
@@ -13,11 +14,11 @@ export default function Header({ pageName, setPageName }) {
   return (
     <div className="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
       <nav className="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
-        <a href="index.html" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <h1 className="m-0 display-4 text-uppercase text-white">
             <i className="bi bi-building text-primary me-2"></i>WEBUILD
           </h1>
-        </a>
+        </Link>
         <button
           onClick={showNavbar}
           className="navbar-toggler"
@@ -29,40 +30,37 @@ export default function Header({ pageName, setPageName }) {
         </button>
         <div className={`collapse navbar-collapse ${show}`} id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
-            <a
-              href=""
+            <Link
+              to="/"
               className={`nav-item nav-link ${pageName === "Home" && "active"}`}
               onClick={(e) => {
-                e.preventDefault();
                 setPageName("Home");
               }}
             >
               Home
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/about"
               className={`nav-item nav-link ${
                 pageName === "About" && "active"
               }`}
               onClick={(e) => {
-                e.preventDefault();
                 setPageName("About");
               }}
             >
               About
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/services"
               className={`nav-item nav-link ${
                 pageName === "Service" && "active"
               }`}
               onClick={(e) => {
-                e.preventDefault();
                 setPageName("Service");
               }}
             >
               Service
-            </a>
+            </Link>
             <div className="nav-item dropdown">
               <a
                 href="#"
@@ -89,18 +87,17 @@ export default function Header({ pageName, setPageName }) {
                 </a>
               </div>
             </div>
-            <a
-              href="contact.html"
+            <Link
+              to="/contact"
               className={`nav-item nav-link ${
                 pageName === "Contact" && "active"
               }`}
               onClick={(e) => {
-                e.preventDefault();
                 setPageName("Contact");
               }}
             >
               Contact
-            </a>
+            </Link>
             <a
               href="#"
               className="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block"

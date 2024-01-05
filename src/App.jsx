@@ -12,6 +12,11 @@ import { useState } from "react";
 import Blogs from "./components/Blogs";
 import SecondaryCarousel from "./components/elements/SecondaryCarousel";
 import Contact from "./components/Contact";
+import Home from "./layouts/Home";
+import AboutTab from "./layouts/AboutTab";
+import ServicesTab from "./layouts/ServicesTab";
+import ContactTab from "./layouts/ContactTab";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [pageName, setPageName] = useState("Home");
@@ -19,23 +24,11 @@ function App() {
     <>
       <TopBar />
       <Header setPageName={setPageName} pageName={pageName} />
-
-      {pageName === "Home" ? (
-        <Corousel />
-      ) : (
-        <SecondaryCarousel pageName={pageName} />
-      )}
-
-      {(pageName === "Home" || pageName === "About") && <About />}
-      {(pageName === "Home" || pageName === "Service") && <Services />}
-      {(pageName === "Home" ||
-        pageName === "About" ||
-        pageName === "Service") && <Appointment />}
-      {pageName === "Home" && <Portfolio />}
-      {pageName === "Contact" && <Contact />}
-      {(pageName === "Home" || pageName === "About") && <Team />}
-      {(pageName === "Home" || pageName === "Service") && <Testimonial />}
-      {pageName === "Home" && <Blogs />}
+      {/* {pageName === "Home" && <Home />}
+      {pageName === "About" && <AboutTab />}
+      {pageName === "Service" && <ServicesTab />}
+      {pageName === "Contact" && <ContactTab />} */}
+      <Outlet />
       <Footer />
     </>
   );
