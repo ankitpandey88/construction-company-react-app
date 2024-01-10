@@ -14,7 +14,14 @@ export default function Header({ pageName, setPageName }) {
   return (
     <div className="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
       <nav className="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
-        <Link to="/" className="navbar-brand">
+        <Link
+          to="/"
+          onClick={(e) => {
+            setPageName("Home");
+            setShow("");
+          }}
+          className="navbar-brand"
+        >
           <h1 className="m-0 display-4 text-uppercase text-white">
             <i className="bi bi-building text-primary me-2"></i>WEBUILD
           </h1>
@@ -35,6 +42,7 @@ export default function Header({ pageName, setPageName }) {
               className={`nav-item nav-link ${pageName === "Home" && "active"}`}
               onClick={(e) => {
                 setPageName("Home");
+                setShow("");
               }}
             >
               Home
@@ -46,6 +54,7 @@ export default function Header({ pageName, setPageName }) {
               }`}
               onClick={(e) => {
                 setPageName("About");
+                setShow("");
               }}
             >
               About
@@ -57,9 +66,22 @@ export default function Header({ pageName, setPageName }) {
               }`}
               onClick={(e) => {
                 setPageName("Service");
+                setShow("");
               }}
             >
               Service
+            </Link>
+            <Link
+              to="/blogs"
+              className={`nav-item nav-link ${
+                pageName === "Blogs" && "active"
+              }`}
+              onClick={(e) => {
+                setPageName("Blogs");
+                setShow("");
+              }}
+            >
+              Blogs
             </Link>
             <div className="nav-item dropdown">
               <a
@@ -94,16 +116,21 @@ export default function Header({ pageName, setPageName }) {
               }`}
               onClick={(e) => {
                 setPageName("Contact");
+                setShow("");
               }}
             >
               Contact
             </Link>
-            <a
-              href="#"
-              className="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block"
+            <Link
+              to="/contact"
+              className="nav-item nav-link  bg-primary text-white px-5 ms-3 d-none d-lg-block"
+              onClick={(e) => {
+                setPageName("Contact");
+                setShow("");
+              }}
             >
               Get A Quote <i className="bi bi-arrow-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -16,7 +16,7 @@ export default function Home() {
       <Appointment />
       <Portfolio />
       <Teams />
-      <Blogs />
+      <Blogs blogsNumber={3} />
     </>
   );
 }

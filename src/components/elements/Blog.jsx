@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux";
 import user from "../../assets/img/user.jpg";
+import { blogsAction } from "../../store/blogSlice";
+import BlogDetails from "../BlogDetails";
+import { Link } from "react-router-dom";
 export default function Blog({ blog }) {
   return (
     <div className="col-lg-4 col-md-6">
@@ -24,9 +28,12 @@ export default function Blog({ blog }) {
             </div>
           </div>
           <h4 className="text-uppercase mb-3">{blog.title}</h4>
-          <a className="text-uppercase fw-bold" href="">
+          <Link
+            className="text-uppercase fw-bold"
+            to={`/blogdetails/${blog.id}`}
+          >
             Read More <i className="bi bi-arrow-right"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
