@@ -15,7 +15,7 @@ export default function Header({ pageName, setPageName }) {
     <div className="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
       <nav className="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
         <Link
-          to="/"
+          to="/construction-company-react-app"
           onClick={(e) => {
             setPageName("Home");
             setShow("");
@@ -38,7 +38,7 @@ export default function Header({ pageName, setPageName }) {
         <div className={`collapse navbar-collapse ${show}`} id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
             <Link
-              to="/"
+              to="/construction-company-react-app"
               className={`nav-item nav-link ${pageName === "Home" && "active"}`}
               onClick={(e) => {
                 setPageName("Home");
@@ -48,7 +48,7 @@ export default function Header({ pageName, setPageName }) {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/construction-company-react-app/about"
               className={`nav-item nav-link ${
                 pageName === "About" && "active"
               }`}
@@ -60,7 +60,7 @@ export default function Header({ pageName, setPageName }) {
               About
             </Link>
             <Link
-              to="/services"
+              to="/construction-company-react-app/services"
               className={`nav-item nav-link ${
                 pageName === "Service" && "active"
               }`}
@@ -72,7 +72,7 @@ export default function Header({ pageName, setPageName }) {
               Service
             </Link>
             <Link
-              to="/blogs"
+              to="/construction-company-react-app/blogs"
               className={`nav-item nav-link ${
                 pageName === "Blogs" && "active"
               }`}
@@ -110,7 +110,7 @@ export default function Header({ pageName, setPageName }) {
               </div>
             </div>
             <Link
-              to="/contact"
+              to="/construction-company-react-app/contact"
               className={`nav-item nav-link ${
                 pageName === "Contact" && "active"
               }`}
@@ -122,7 +122,7 @@ export default function Header({ pageName, setPageName }) {
               Contact
             </Link>
             <Link
-              to="/contact"
+              to="/construction-company-react-app/contact"
               className="nav-item nav-link  bg-primary text-white px-5 ms-3 d-none d-lg-block"
               onClick={(e) => {
                 setPageName("Contact");

@@ -30,7 +30,7 @@ export default function Blog({ blog }) {
           <h4 className="text-uppercase mb-3">{blog.title}</h4>
           <Link
             className="text-uppercase fw-bold"
-            to={`/blogdetails/${blog.id}`}
+            to={`/construction-company-react-app/blogdetails/${blog.id}`}
           >
             Read More <i className="bi bi-arrow-right"></i>
           </Link>

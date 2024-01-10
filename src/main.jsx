@@ -14,15 +14,27 @@ import BlogDetails from "./components/BlogDetails.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/construction-company-react-app",
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/about", element: <AboutTab /> },
-      { path: "/services", element: <ServicesTab /> },
-      { path: "/blogs", element: <Blogs blogsNumber={10} /> },
-      { path: "/blogdetails/:id", element: <BlogDetails /> },
-      { path: "/contact", element: <ContactTab /> },
+      { path: "/construction-company-react-app", element: <Home /> },
+      { path: "/construction-company-react-app/about", element: <AboutTab /> },
+      {
+        path: "/construction-company-react-app/services",
+        element: <ServicesTab />,
+      },
+      {
+        path: "/construction-company-react-app/blogs",
+        element: <Blogs blogsNumber={10} />,
+      },
+      {
+        path: "/construction-company-react-app/blogdetails/:id",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/construction-company-react-app/contact",
+        element: <ContactTab />,
+      },
     ],
   },
 ]);
