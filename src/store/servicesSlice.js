@@ -9,27 +9,27 @@ import services6 from "../assets/img/service-6.jpg";
 const services = [
   {
     serviceImg: services1,
-    title: "Web Design",
+    title: "Lodha World Tower",
     logo: "fa-home",
     body: " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae sint, labore obcaecati facilis quo soluta praesentium repudiandae dolor officia, iste repellat hic et earum architecto rem! Quisquam, laboriosam et?",
   },
   {
     serviceImg: services2,
-    title: "Web Design 2",
+    title: "Mumbai Metro Project",
     logo: "fa-drafting-compass",
     body: " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae sint, labore obcaecati facilis quo soluta praesentium repudiandae dolor officia, iste repellat hic et earum architecto rem! Quisquam, laboriosam et?",
   },
   {
     serviceImg: services3,
-    title: "Web Design 3",
+    title: " Chalet Hotel",
     logo: "fa-palette ",
     body: " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae sint, labore obcaecati facilis quo soluta praesentium repudiandae dolor officia, iste repellat hic et earum architecto rem! Quisquam, laboriosam et?",
   },
 ];
 const servicesSlice = createSlice({
-  name:"services",
+  name: "services",
   initialState: services,
-  
+
 })
 
 export default servicesSlice;

@@ -9,7 +9,7 @@ export default function TopBar() {
             <i className="bi bi-geo-alt fs-1 text-primary me-3"></i>
             <div className="text-start">
               <h6 className="text-uppercase fw-bold">Our Office</h6>
-              <span>Kotli Azad Kashmir</span>
+              <span>Goregaon East ,Mumbai</span>
             </div>
           </div>
         </div>
@@ -18,7 +18,7 @@ export default function TopBar() {
             <i className="bi bi-envelope-open fs-1 text-primary me-3"></i>
             <div className="text-start">
               <h6 className="text-uppercase fw-bold">Email Us</h6>
-              <span>afraheemraz789@gmail.com</span>
+              <span>shriji.construction19@gmail.com</span>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function TopBar() {
             <i className="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
             <div className="text-start">
               <h6 className="text-uppercase fw-bold">Call Us</h6>
-              <span>+92 301 8592729</span>
+              <span>+919426742720</span>
             </div>
           </div>
         </div>

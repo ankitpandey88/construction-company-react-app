@@ -23,7 +23,7 @@ export default function Header({ pageName, setPageName }) {
           className="navbar-brand"
         >
           <h1 className="m-0 display-4 text-uppercase text-white">
-            <i className="bi bi-building text-primary me-2"></i>WEBUILD
+            <i className="bi bi-building text-primary me-2"></i>SHRIJi CONSTRUCTION
           </h1>
         </Link>
         <button

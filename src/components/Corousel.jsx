@@ -27,9 +27,10 @@ export default function Corousel() {
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
                   <i className="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i>
-                  <h1 className="display-2 text-uppercase text-white mb-md-4">
-                    Build Your Dream House With Us
-                  </h1>
+                  <h3 className="display-2  text-white mb-md-4">
+                    {/* Build Your Dream House With Us */}
+                    Structural Excellence Unleashed: Fabrication, Erection, Precision – Your Vision, Our Construction
+                  </h3>
                   <a href="" className="btn btn-primary py-md-3 px-md-5 mt-2">
                     Get A Quote
                   </a>

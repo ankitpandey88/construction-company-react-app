@@ -10,16 +10,20 @@ export default function About() {
             We are <span className="text-primary">the Leader</span> in
             Construction Industry
           </h1>
-          <h4 className="text-uppercase mb-3 text-body">
+          {/* <h4 className="text-uppercase mb-3 text-body">
             Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum tempor
             sit diam amet diam et eos labore
-          </h4>
+          </h4> */}
           <p>
-            Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam
-            dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam
-            diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem
-            et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-            tempor
+          SHRIJI Construction as a family-owned general contractor in Fabrication &
+Erection All Type of Structural Steel .
+We have grown exponentially and are responsible for some of the most
+challenging projects in and around All India.
+From the start SHRIJI Construction has delivered construction services by its
+motto: On time, within budget, with safety in all respect & quality to your
+satisfaction.
+SHRIJI Construction is self-perform ability provides a level of expertise and value
+that is unmatched in the industry at it’s competition level. 
           </p>
           <div className="row gx-5 py-2">
             <div className="col-sm-6 mb-2">
@@ -51,11 +55,11 @@ export default function About() {
               </p>
             </div>
           </div>
-          <p className="mb-4">
+          {/* <p className="mb-4">
             Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam
             dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam
             diam amet diam et eos labore
-          </p>
+          </p> */}
           <img src={signature} alt="" />
         </div>
         <div className="col-lg-5 pb-5" style={{ minHeight: "400px" }}>

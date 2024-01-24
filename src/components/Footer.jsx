@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-lg-6 pe-lg-5">
             <a href="index.html" className="navbar-brand">
               <h1 className="m-0 display-4 text-uppercase text-white">
-                <i className="bi bi-building text-primary me-2"></i>WEBUILD
+                <i className="bi bi-building text-primary me-2"></i>Shree Construction
               </h1>
             </a>
             <p>
@@ -121,23 +121,18 @@ export default function Footer() {
             <p className="mb-0">
               &copy;{" "}
               <a className="text-primary" href="#">
-                Your Site Name
+                Shriji Construction
               </a>
               . All Rights Reserved.
             </p>
           </div>
           <div className="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
             <p className="mb-0">
-              Designed by{" "}
-              <a className="text-dark" href="https://htmlcodex.com">
-                HTML Codex
-              </a>
+              Develop by @Ankit Pandey
+              
             </p>
             <p className="mb-0">
-              Distributed by{" "}
-              <a className="text-dark" href="https://themewagon.com">
-                ThemeWagon
-              </a>
+              
             </p>
           </div>
         </div>
